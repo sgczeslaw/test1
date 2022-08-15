@@ -1,0 +1,40 @@
+{
+   "checksum": "de860e456a2777a737153e98fe21cf68",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13305044327054867",
+            "guid": "92b67772-041b-456b-b664-0967a3865af6",
+            "id": "5",
+            "name": "New Tab",
+            "type": "url",
+            "url": "chrome://newtab/"
+         } ],
+         "date_added": "13305044275684489",
+         "date_modified": "13305044327054867",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13305044275684491",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13305044275684492",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
