@@ -31,5 +31,66 @@ options.add_argument("--remote-debugging-port=38223")
 options.add_argument('--proxy-server=%s' % PROXY)
 driver = uc.Chrome(options=options, version_main=105)  # version_main allows to specify your chrome version instead of following chrome global version
 driver.set_window_size(1920, 1080)
-driver.get("https://www.youtube.com/watch?v=IJnnJrtOhQM")
-time.sleep(600)
+while True:
+    print("rawr")
+    print('Current Time:', time.ctime(time.time()))
+    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+    headers = {'Authorization': 'e54a4490de5045589e0c98283821c783'}
+    time.sleep(5)
+    def playvideo():
+      try:
+        if(driver.find_element(By.XPATH, '/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[1]/div/div/div/ytd-player/div/div/div[31]/div[2]/div[1]/button').get_attribute("title")=="Play (k)"):
+          driver.find_element(By.XPATH, '/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[1]/div/div/div/ytd-player/div/div/div[31]/div[2]/div[1]/button').click()
+      except:
+        pass
+
+    playvideo()
+    time.sleep(60)
+    rsp = requests.get('https://bluezczatu.hckrteam.com/link', headers = headers)
+    response = rsp.json()
+    driver.get(response["url"])
+    time.sleep(response["time"])
+    
+    playvideo()
+    rsp = requests.get('https://bluezczatu.hckrteam.com/link', headers = headers)
+    response = rsp.json()
+    driver.get(response["url"])
+    time.sleep(response["time"])
+
+    playvideo()
+    rsp = requests.get('https://bluezczatu.hckrteam.com/link', headers = headers)
+    response = rsp.json()
+    driver.get(response["url"])
+    time.sleep(response["time"])
+
+    playvideo()
+    rsp = requests.get('https://bluezczatu.hckrteam.com/link', headers = headers)
+    response = rsp.json()
+    driver.get(response["url"])
+    time.sleep(response["time"])
+
+    playvideo()
+    rsp = requests.get('https://bluezczatu.hckrteam.com/link', headers = headers)
+    response = rsp.json()
+    driver.get(response["url"])
+    time.sleep(response["time"])
+    
+    playvideo()
+    rsp = requests.get('https://bluezczatu.hckrteam.com/link', headers = headers)
+    response = rsp.json()
+    driver.get(response["url"])
+    time.sleep(response["time"])
+
+    playvideo()
+    rsp = requests.get('https://bluezczatu.hckrteam.com/link', headers = headers)
+    response = rsp.json()
+    driver.get(response["url"])
+    time.sleep(response["time"])
+
+    playvideo()
+    rsp = requests.get('https://bluezczatu.hckrteam.com/link', headers = headers)
+    response = rsp.json()
+    driver.get(response["url"])
+    time.sleep(response["time"])
+    
+    driver.close()
