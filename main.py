@@ -46,10 +46,10 @@ def playvideo():
 
 playvideo()
 print(PROXY)
-driver.get('https://www.youtube.com/watch?v=ZSFaCW90vJY')
-time.sleep(50)
+driver.get('https://www.youtube.com/watch?v=nLMSs1YW0pU')
+time.sleep(60)
     
 playvideo()
 print(PROXY)
-driver.get('https://www.youtube.com/watch?v=ZSFaCW90vJY')
-time.sleep(50)
+driver.get('https://www.youtube.com/watch?v=nLMSs1YW0pU')
+time.sleep(900)
