@@ -42,9 +42,9 @@ def playvideo():
 time.sleep(3)
 
 playvideo()
-driver.get('https://www.youtube.com/watch?v=cAzjPLgH7PA')
-time.sleep(63)
+driver.get('https://www.youtube.com/watch?v=ZSFaCW90vJY')
+time.sleep(50)
     
 playvideo()
-driver.get('https://www.youtube.com/watch?v=cAzjPLgH7PA')
-time.sleep(68)
+driver.get('https://www.youtube.com/watch?v=ZSFaCW90vJY')
+time.sleep(51)
