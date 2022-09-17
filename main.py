@@ -41,8 +41,10 @@ def playvideo():
     pass
 time.sleep(3)
 
-driver.get('https://bluezczatu.hckrteam.com/link')
-time.sleep(1)
+playvideo()
+driver.get('https://www.youtube.com/watch?v=ZSFaCW90vJY')
+time.sleep(50)
     
-driver.get('https://bluezczatu.hckrteam.com/link')
-time.sleep(3)
+playvideo()
+driver.get('https://www.youtube.com/watch?v=ZSFaCW90vJY')
+time.sleep(51)
