@@ -46,10 +46,10 @@ def playvideo():
 
 playvideo()
 print(PROXY)
-driver.get('https://bluezczatu.hckrteam.com')
+driver.get('https://bluezczatu.hckrteam.com/link')
 time.sleep(1)
     
 playvideo()
 print(PROXY)
-driver.get('https://bluezczatu.hckrteam.com')
+driver.get('https://bluezczatu.hckrteam.com/link')
 time.sleep(3)
