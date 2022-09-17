@@ -20,16 +20,6 @@ username_for = low_word
 password_for = low_word + upper_word + number + symbols
 long_password = 16
 long_username = 12
-
-response = requests.get(
-    "https://proxy.webshare.io/api/v2/proxy/ipauthorization/", 
-    headers={"Authorization": "	bh0id07r7u2gdme0q7r8v9m8r6pziwocgrgjuscc"}
-)
-response.json()
-
-with open("proxy.txt") as f:
-    lines = f.readlines()
-PROXY = random.choice(lines)
 options.add_argument('--no-first-run --no-service-autorun --password-store=basic') #wlacz to jak juz nie bedzie dev test
 options.user_data_dir = "rawr"
 options.add_argument("--window-size=1920,1080")
@@ -52,10 +42,8 @@ def playvideo():
     pass
 time.sleep(3)
 
-print(PROXY)
 driver.get('https://bluezczatu.hckrteam.com/link')
 time.sleep(1)
     
-print(PROXY)
 driver.get('https://bluezczatu.hckrteam.com/link')
 time.sleep(3)
