@@ -20,6 +20,13 @@ username_for = low_word
 password_for = low_word + upper_word + number + symbols
 long_password = 16
 long_username = 12
+
+response = requests.get(
+    "https://proxy.webshare.io/api/v2/proxy/ipauthorization/", 
+    headers={"Authorization": "	bh0id07r7u2gdme0q7r8v9m8r6pziwocgrgjuscc"}
+)
+response.json()
+
 with open("proxy.txt") as f:
     lines = f.readlines()
 PROXY = random.choice(lines)
@@ -43,13 +50,6 @@ def playvideo():
       driver.find_element(By.XPATH, '/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[1]/div/div/div/ytd-player/div/div/div[31]/div[2]/div[1]/button').click()
   except:
     pass
-
-response = requests.get(
-    "https://proxy.webshare.io/api/v2/proxy/ipauthorization/", 
-    headers={"Authorization": "	bh0id07r7u2gdme0q7r8v9m8r6pziwocgrgjuscc"}
-)
-response.json()
-
 time.sleep(3)
 
 print(PROXY)
