@@ -51,7 +51,9 @@ timex = 1
 timex = response["time"]
 driver.get(response["url"])
 time.sleep(timex)
-
+print("XXXXXXXXXXXXXXXXXXXXXXXXX")
+print(esponse["url"])
+print(timex)
     
 playvideo()
 rsp = requests.get('https://api-3.j0ln-w41k3r.tk/link', headers = headers)
@@ -60,6 +62,9 @@ timex = 1
 timex = response["time"]
 driver.get(response["url"])
 time.sleep(timex)
+print("XXXXXXXXXXXXXXXXXXXXXXXXX")
+print(esponse["url"])
+print(timex)
 
 
 playvideo()
@@ -69,5 +74,8 @@ timex = 1
 timex = response["time"]
 driver.get(response["url"])
 time.sleep(timex)
+print("XXXXXXXXXXXXXXXXXXXXXXXXX")
+print(esponse["url"])
+print(timex)
 
 driver.close()
