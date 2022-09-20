@@ -20,14 +20,17 @@ username_for = low_word
 password_for = low_word + upper_word + number + symbols
 long_password = 16
 long_username = 12
+with open("proxy.txt") as f:
+    lines = f.readlines()
+PROXY = "http://IH77e2FzmChhhqAy:0kDHgHxlF35miImDv@"+random.choice(lines)
 options.add_argument('--no-first-run --no-service-autorun --password-store=basic') #wlacz to jak juz nie bedzie dev test
 options.user_data_dir = "rawr"
 options.add_argument("--window-size=1920,1080")
 options.add_argument('--user-data-dir=rawr')
 options.add_argument("--remote-debugging-port=38223")
+options.add_argument('--proxy-server=%s' % PROXY)
 driver = uc.Chrome(options=options, version_main=105)  # version_main allows to specify your chrome version instead of following chrome global version
 driver.set_window_size(1920, 1080)
-
 print("rawr")
 print('Current Time:', time.ctime(time.time()))
 user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
@@ -39,12 +42,32 @@ def playvideo():
       driver.find_element(By.XPATH, '/html/body/ytd-app/div[1]/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[1]/div/div/div/ytd-player/div/div/div[31]/div[2]/div[1]/button').click()
   except:
     pass
-time.sleep(3)
 
 playvideo()
-driver.get('https://www.youtube.com/watch?v=QQguvY_9Iuw')
-time.sleep(50)
+time.sleep(60)
+rsp = requests.get('https://api-3.j0ln-w41k3r.tk/link', headers = headers)
+response = rsp.json()
+timex = 1
+timex = response["time"]
+driver.get(response["url"])
+time.sleep(timex)
+
     
 playvideo()
-driver.get('https://www.youtube.com/watch?v=QQguvY_9Iuw')
-time.sleep(19200)
+rsp = requests.get('https://api-3.j0ln-w41k3r.tk/link', headers = headers)
+response = rsp.json()
+timex = 1
+timex = response["time"]
+driver.get(response["url"])
+time.sleep(timex)
+
+
+playvideo()
+rsp = requests.get('https://api-3.j0ln-w41k3r.tk/link', headers = headers)
+response = rsp.json()
+timex = 1
+timex = response["time"]
+driver.get(response["url"])
+time.sleep(timex)
+
+driver.close()
