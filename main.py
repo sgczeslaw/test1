@@ -52,7 +52,7 @@ timex = response["time"]
 driver.get(response["url"])
 time.sleep(timex)
 print("XXXXXXXXXXXXXXXXXXXXXXXXX")
-print(esponse["url"])
+print(response["url"])
 print(timex)
     
 playvideo()
@@ -63,7 +63,7 @@ timex = response["time"]
 driver.get(response["url"])
 time.sleep(timex)
 print("XXXXXXXXXXXXXXXXXXXXXXXXX")
-print(esponse["url"])
+print(response["url"])
 print(timex)
 
 
@@ -75,7 +75,7 @@ timex = response["time"]
 driver.get(response["url"])
 time.sleep(timex)
 print("XXXXXXXXXXXXXXXXXXXXXXXXX")
-print(esponse["url"])
+print(response["url"])
 print(timex)
 
 driver.close()
